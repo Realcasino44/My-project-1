@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines the character encoding. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the layout responsive on mobile devices. -->
+  <meta name="description" content="Portfolio of a mechanical engineering graduate interested in intelligent engineering, design, simulation, and artificial intelligence."> <!-- Describes the portfolio for search engines. -->
+  <title>Mucyo Aime | Mechanical Engineer & Emerging AI Practitioner</title> <!-- Sets the browser tab title. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Speeds up font loading. -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnects to the font hosting service. -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Loads the website fonts. -->
+  <link rel="stylesheet" href="styles.css"> <!-- Connects the website styles. -->
+  <script src="script.js" defer></script> <!-- Loads interactive behavior after the HTML is parsed. -->
+</head>
+<body>
+  <div class="site-shell"> <!-- Keeps the website content aligned. -->
+    <header class="site-header"> <!-- Contains the brand and navigation. -->
+      <a class="brand" href="#home" aria-label="Mucyo Aime home"><span class="brand-mark">MA</span><span>MUCYO AIME<span class="brand-subtitle">ENGINEERING · TECHNOLOGY</span></span></a> <!-- Displays the portfolio identity. -->
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span></button> <!-- Opens the mobile navigation. -->
+      <nav class="navigation" aria-label="Main navigation"> <!-- Provides links to website sections. -->
+        <a href="#about">About</a> <!-- Links to the about section. -->
+        <a href="#work">Projects</a> <!-- Links to the projects section. -->
+        <a href="#experience">Experience</a> <!-- Links to the experience section. -->
+        <a href="#contact">Contact</a> <!-- Links to the contact section. -->
+        <a class="nav-cta" href="assets/Mucyo_Aime_CV.pdf" download>Download CV <span>↗</span></a> <!-- Downloads the CV when the user adds the PDF file. -->
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home"> <!-- Introduces the portfolio owner. -->
+        <div class="hero-copy"> <!-- Holds the main introduction text. -->
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO ENGINEERING & AI OPPORTUNITIES</p> <!-- Shows a professional availability note. -->
+          <h1>Engineering ideas.<br><span>Building what’s next.</span></h1> <!-- Presents the main portfolio statement. -->
+          <p class="hero-description">I’m Mucyo Aime, a Mechanical Engineering graduate exploring the intersection of mechanical design, digital fabrication, simulation, and artificial intelligence.</p> <!-- Summarizes the professional profile. -->
+          <div class="hero-actions"> <!-- Groups the primary actions. -->
+            <a class="button button-primary" href="#work">Explore my work <span>↗</span></a> <!-- Takes visitors to the projects. -->
+            <a class="text-link" href="#contact">Let’s connect <span>→</span></a> <!-- Takes visitors to the contact section. -->
+          </div>
+          <div class="hero-meta"><span>KIGALI, RWANDA</span><span class="meta-line"></span><span>MECHANICAL ENGINEERING · AI/ML</span></div> <!-- Shows location and professional focus. -->
+        </div>
+        <div class="hero-visual" aria-label="Abstract engineering-inspired visual"> <!-- Creates a decorative visual without requiring an image file. -->
+          <div class="visual-orbit orbit-one"></div> <!-- Draws the first orbital ring. -->
+          <div class="visual-orbit orbit-two"></div> <!-- Draws the second orbital ring. -->
+          <div class="visual-core"><span>MA</span><small>DESIGN<br>·<br>BUILD<br>·<br>LEARN</small></div> <!-- Displays the portfolio initials and theme. -->
+          <span class="visual-label label-top">01 / ENGINEERING</span> <!-- Labels the visual. -->
+          <span class="visual-label label-bottom">CURIOUS BY DESIGN</span> <!-- Adds a second visual label. -->
+          <span class="visual-cross cross-one">+</span><span class="visual-cross cross-two">+</span> <!-- Adds small technical accents. -->
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a> <!-- Encourages visitors to continue down the page. -->
+      </section>
+
+      <section class="section about-section" id="about"> <!-- Explains the portfolio owner's background. -->
+        <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Practical engineering.<br><span>Curious thinking.</span></h2></div> <!-- Introduces the about section. -->
+        <div class="about-grid"> <!-- Arranges the profile text and key facts. -->
+          <div class="about-main"><p class="lead">I enjoy turning engineering challenges into practical, well-considered solutions.</p><p>My foundation is in mechanical engineering, with hands-on experience in product design, computer-aided engineering, prototyping, and embedded systems. Through academic projects and industry experience, I have developed an interest in using data and intelligent technologies to improve the way engineering systems are designed and operated.</p><p>I am continuing to build my skills in artificial intelligence and machine learning, with a particular interest in applying them to real-world engineering problems.</p></div> <!-- Provides the professional biography. -->
+          <div class="about-facts"><div><span class="fact-number">01</span><span class="fact-label">Mechanical design<br>& simulation</span></div><div><span class="fact-number">02</span><span class="fact-label">Digital fabrication<br>& prototyping</span></div><div><span class="fact-number">03</span><span class="fact-label">Embedded systems<br>& AI/ML learning</span></div></div> <!-- Highlights three areas of interest. -->
+        </div>
+        <div class="skills-block"><p class="eyebrow">TOOLS & TECHNOLOGIES</p><div class="skill-list"><span>SolidWorks</span><span>Autodesk Inventor</span><span>ANSYS Workbench</span><span>AutoCAD</span><span>Revit MEP</span><span>Fusion 360</span><span>Python</span><span>Arduino</span><span>ESP32</span><span>CNC & 3D Printing</span></div></div> <!-- Lists tools and technologies. -->
+      </section>
+
+      <section class="section projects-section" id="work"> <!-- Displays selected engineering and technology projects. -->
+        <div class="section-heading heading-row"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects with<br><span>purpose.</span></h2></div><p class="heading-note">A selection of academic, fabrication, and machine-learning work.</p></div> <!-- Introduces the project collection. -->
+        <div class="project-grid"> <!-- Arranges the project cards. -->
+          <article class="project-card project-featured"><div class="project-art raspador-art"><span class="art-index">PROJECT 01</span><div class="machine-line line-a"></div><div class="machine-line line-b"></div><div class="machine-wheel"></div><span class="art-caption">FEA / MECHANICAL DESIGN</span></div><div class="project-info"><div class="project-type">FINAL-YEAR PROJECT · 2026</div><h3>Banana Pseudo-Stem Fibre Extracting Raspador</h3><p>Designed and simulated a rotating raspador drum, evaluating blade configurations and structural performance using finite element analysis.</p><div class="tag-row"><span>SolidWorks</span><span>ANSYS</span><span>FEA</span></div></div></article> <!-- Describes the final-year engineering project. -->
+          <article class="project-card"><div class="project-art aqua-art"><span class="art-index">PROJECT 02</span><div class="aqua-sun"></div><div class="aqua-tank"><span></span><span></span><span></span></div><div class="aqua-leaf">✳</div><span class="art-caption">EMBEDDED SYSTEMS / IOT</span></div><div class="project-info"><div class="project-type">FABLAB · TECHUP SKILLS 2025</div><h3>Solar-Powered Aquaponics System</h3><p>Led a three-person team developing a closed aquaponics prototype with automated fish feeding and a mobile dashboard concept.</p><div class="tag-row"><span>Arduino</span><span>ESP32</span><span>Prototyping</span></div></div></article> <!-- Describes the aquaponics prototype. -->
+          <article class="project-card"><div class="project-art data-art"><span class="art-index">PROJECT 03</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="chart-baseline"></span><span class="art-caption">MACHINE LEARNING</span></div><div class="project-info"><div class="project-type">PERSONAL PROJECT</div><h3>House Price Prediction</h3><p>Explored a machine-learning workflow for predicting house prices, from preparing data to training and evaluating a predictive model.</p><div class="tag-row"><span>Python</span><span>Machine Learning</span><span>Data Analysis</span></div></div></article> <!-- Describes the machine-learning project. -->
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience"> <!-- Summarizes education and practical experience. -->
+        <div class="section-heading"><p class="eyebrow">03 / EXPERIENCE & EDUCATION</p><h2>Learning by<br><span>doing.</span></h2></div> <!-- Introduces the timeline. -->
+        <div class="timeline"> <!-- Groups the experience entries chronologically. -->
+          <article class="timeline-item"><div class="timeline-date">AUG 2026 — DEC 2026</div><div class="timeline-content"><p class="timeline-label">INDUSTRY EXPERIENCE</p><h3>Mechanical Engineer Intern · Ampersand Rwanda</h3><p>Contributing to hardware design activities, including spare-part design and 3D printing, rack improvement concepts, and engineering support for battery-swapping infrastructure.</p></div></article> <!-- Describes the current internship. -->
+          <article class="timeline-item"><div class="timeline-date">AUG 2025 — DEC 2025</div><div class="timeline-content"><p class="timeline-label">PRACTICAL TECHNICAL TRAINING</p><h3>TechUp Skills for All · FabLab Rwanda</h3><p>Developed practical skills in embedded systems, mechatronics, PCB design, product development, CNC machining, laser cutting, and 3D printing.</p></div></article> <!-- Describes the FabLab training. -->
+          <article class="timeline-item"><div class="timeline-date">OCT 2026</div><div class="timeline-content"><p class="timeline-label">EDUCATION</p><h3>BSc Mechanical Engineering · University of Rwanda</h3><p>Focused on mechanical design, engineering analysis, manufacturing, and the application of simulation to engineering problems.</p></div></article> <!-- Describes the university qualification. -->
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact"> <!-- Invites visitors to make contact. -->
+        <div class="contact-intro"><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have a challenge<br>worth <span>solving?</span></h2><p>I’m interested in meaningful engineering, technology, and AI opportunities. Send me a message and let’s connect.</p><a class="contact-email" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a></div> <!-- Displays contact information that the owner should replace. -->
+        <form class="contact-form" id="contact-form"> <!-- Provides a contact form that opens the visitor's email application. -->
+          <label for="visitor-name">YOUR NAME</label><input id="visitor-name" name="name" type="text" placeholder="How should I address you?" required> <!-- Collects the visitor's name. -->
+          <label for="visitor-email">EMAIL ADDRESS</label><input id="visitor-email" name="email" type="email" placeholder="you@example.com" required> <!-- Collects the visitor's email address. -->
+          <label for="visitor-message">MESSAGE</label><textarea id="visitor-message" name="message" rows="4" placeholder="Tell me a little about your idea..." required></textarea> <!-- Collects the visitor's message. -->
+          <button class="button button-primary form-submit" type="submit">Send message <span>↗</span></button> <!-- Opens an email draft with the visitor's message. -->
+          <p class="form-note" id="form-feedback" aria-live="polite">This form opens your email application to send the message.</p> <!-- Explains how the form works. -->
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"> <!-- Displays the footer and social links. -->
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">MA</span><span>MUCYO AIME<span class="brand-subtitle">ENGINEERING · TECHNOLOGY</span></span></a> <!-- Repeats the portfolio identity. -->
+      <p>Designed with curiosity. Built with purpose.</p> <!-- Adds a short closing statement. -->
+      <div class="footer-links"><a href="#home">BACK TO TOP ↑</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div> <!-- Provides navigation and a placeholder LinkedIn link. -->
+      <small>© <span id="current-year"></span> Mucyo Aime. All rights reserved.</small> <!-- Displays the current year. -->
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* Defines the main colors, spacing, and typography used throughout the website. */
+:root { --background: #0b0e12; --surface: #11161d; --surface-light: #171e27; --text: #f2f4f5; --muted: #9ba6b2; --accent: #c7f36b; --line: rgba(255,255,255,.11); --font-body: "DM Sans", sans-serif; --font-heading: "Manrope", sans-serif; }
+/* Applies predictable sizing to every element. */
+* { box-sizing: border-box; }
+/* Enables smooth movement when visitors use section links. */
+html { scroll-behavior: smooth; }
+/* Sets the global page appearance. */
+body { margin: 0; background: var(--background); color: var(--text); font-family: var(--font-body); line-height: 1.7; }
+/* Removes default link decoration and inherits the text color. */
+a { color: inherit; text-decoration: none; }
+/* Keeps the site within a comfortable reading width. */
+.site-shell { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
+/* Arranges the brand and navigation horizontally. */
+.site-header { min-height: 94px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+/* Styles the brand identity. */
+.brand { display: inline-flex; align-items: center; gap: 12px; font: 800 12px var(--font-heading); letter-spacing: .13em; }
+/* Creates the initials badge. */
+.brand-mark { width: 39px; height: 39px; display: grid; place-items: center; border: 1px solid rgba(199,243,107,.55); color: var(--accent); font-size: 12px; letter-spacing: 0; }
+/* Styles the small brand descriptor. */
+.brand-subtitle { display: block; margin-top: 3px; color: var(--muted); font: 500 8px var(--font-body); letter-spacing: .17em; }
+/* Aligns the navigation links. */
+.navigation { display: flex; align-items: center; gap: 32px; color: #c4cbd1; font-size: 12px; }
+/* Adds a subtle hover transition to navigation links. */
+.navigation a { transition: color .2s ease; }
+/* Highlights navigation links on hover. */
+.navigation a:hover, .text-link:hover { color: var(--accent); }
+/* Styles the download action in the header. */
+.navigation .nav-cta { padding: 10px 15px; border: 1px solid var(--line); color: var(--text); }
+/* Styles the arrow in the download action. */
+.nav-cta span { margin-left: 8px; color: var(--accent); }
+/* Hides the mobile menu button on larger screens. */
+.menu-toggle { display: none; }
+/* Establishes shared spacing for major page sections. */
+.section { padding: 125px 0; border-bottom: 1px solid var(--line); }
+/* Creates the two-column hero layout. */
+.hero { min-height: 690px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; position: relative; padding-top: 105px; padding-bottom: 125px; }
+/* Styles the small uppercase section labels. */
+.eyebrow { margin: 0 0 24px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
+/* Creates the small green status indicator. */
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 13px rgba(199,243,107,.65); }
+/* Styles the main hero heading. */
+h1, h2, h3, p { margin-top: 0; }
+/* Applies the display font to large headings. */
+h1, h2, h3 { font-family: var(--font-heading); }
+/* Controls the size and spacing of the main heading. */
+h1 { margin-bottom: 24px; font-size: clamp(48px, 6.2vw, 78px); line-height: 1.08; letter-spacing: -.065em; }
+/* Highlights important heading phrases. */
+h1 span, h2 span { color: var(--accent); }
+/* Limits the hero paragraph width. */
+.hero-description { max-width: 535px; color: var(--muted); font-size: 15px; line-height: 1.9; }
+/* Places the hero buttons next to each other. */
+.hero-actions { display: flex; align-items: center; gap: 28px; margin-top: 35px; }
+/* Defines the primary button appearance. */
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 25px; min-height: 49px; padding: 0 19px; border: 0; font: 700 11px var(--font-body); cursor: pointer; }
+/* Applies the accent background to primary actions. */
+.button-primary { background: var(--accent); color: #10150a; transition: transform .2s ease, background .2s ease; }
+/* Adds a small movement effect to primary actions. */
+.button-primary:hover { transform: translateY(-3px); background: #d8ff86; }
+/* Styles the secondary hero link. */
+.text-link { color: #dce1e5; font-size: 12px; }
+/* Colors the secondary link arrow. */
+.text-link span { color: var(--accent); }
+/* Displays the hero location and professional focus. */
+.hero-meta { display: flex; align-items: center; gap: 13px; margin-top: 65px; color: #7f8b97; font-size: 9px; letter-spacing: .13em; }
+/* Draws the thin separator in the hero metadata. */
+.meta-line { width: 32px; height: 1px; background: var(--accent); }
+/* Creates the abstract engineering-inspired hero artwork. */
+.hero-visual { width: min(390px, 100%); aspect-ratio: 1; justify-self: end; position: relative; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.07); border-radius: 50%; background: radial-gradient(circle, rgba(199,243,107,.09), transparent 64%); }
+/* Draws the orbital rings around the hero initials. */
+.visual-orbit { position: absolute; width: 74%; height: 74%; border: 1px solid rgba(199,243,107,.23); border-radius: 50%; }
+/* Rotates the first orbital ring. */
+.orbit-one { transform: rotate(-32deg) scaleX(.74); }
+/* Rotates the second orbital ring. */
+.orbit-two { transform: rotate(48deg) scaleX(.74); border-color: rgba(255,255,255,.16); }
+/* Styles the center of the hero artwork. */
+.visual-core { width: 43%; height: 43%; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(199,243,107,.55); border-radius: 50%; background: #10171a; box-shadow: 0 0 70px rgba(199,243,107,.08); }
+/* Styles the initials inside the visual. */
+.visual-core span { color: var(--accent); font: 800 38px var(--font-heading); letter-spacing: -.08em; }
+/* Styles the small design words inside the visual. */
+.visual-core small { margin-top: 9px; color: var(--muted); font-size: 7px; line-height: 1.5; text-align: center; letter-spacing: .15em; }
+/* Places small labels around the hero artwork. */
+.visual-label { position: absolute; color: #a3adb6; font-size: 8px; letter-spacing: .16em; }
+/* Positions the upper visual label. */
+.label-top { top: 10%; right: -5%; }
+/* Positions the lower visual label. */
+.label-bottom { bottom: 11%; left: -7%; }
+/* Adds technical cross symbols around the artwork. */
+.visual-cross { position: absolute; color: var(--accent); font-size: 20px; }
+/* Positions the first cross symbol. */
+.cross-one { top: 24%; left: 5%; }
+/* Positions the second cross symbol. */
+.cross-two { right: 9%; bottom: 22%; }
+/* Positions the scroll cue at the bottom of the hero section. */
+.scroll-cue { position: absolute; bottom: 31px; left: 0; display: flex; align-items: center; gap: 12px; color: #7f8b97; font-size: 8px; letter-spacing: .17em; }
+/* Draws the scroll cue line. */
+.scroll-cue span { width: 30px; height: 1px; background: var(--accent); }
+/* Styles the shared section heading. */
+.section-heading { margin-bottom: 55px; }
+/* Controls the size of section headings. */
+h2 { margin-bottom: 0; font-size: clamp(38px, 5vw, 57px); line-height: 1.12; letter-spacing: -.06em; }
+/* Arranges the about section into two columns. */
+.about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 100px; }
+/* Styles the opening sentence in the about section. */
+.about-main .lead { max-width: 600px; color: var(--text); font: 600 21px/1.6 var(--font-heading); }
+/* Styles the remaining biography paragraphs. */
+.about-main p:not(.lead) { max-width: 620px; color: var(--muted); font-size: 13px; line-height: 2; }
+/* Creates the three-column fact layout. */
+.about-facts { display: grid; grid-template-columns: 1fr 1fr; align-content: start; gap: 28px 20px; }
+/* Styles the numbered fact labels. */
+.fact-number { display: block; margin-bottom: 12px; color: var(--accent); font: 700 25px var(--font-heading); }
+/* Styles the fact descriptions. */
+.fact-label { color: #c4cbd1; font-size: 11px; line-height: 1.7; }
+/* Adds spacing above the skills list. */
+.skills-block { margin-top: 65px; padding-top: 28px; border-top: 1px solid var(--line); }
+/* Arranges technology tags with wrapping. */
+.skill-list, .tag-row { display: flex; flex-wrap: wrap; gap: 9px; }
+/* Styles each technology tag. */
+.skill-list span, .tag-row span { padding: 8px 12px; border: 1px solid var(--line); color: #b8c1c9; font-size: 10px; }
+/* Aligns the projects heading and its note. */
+.heading-row { display: flex; justify-content: space-between; align-items: end; }
+/* Limits the project heading note width. */
+.heading-note { max-width: 260px; margin-bottom: 4px; color: var(--muted); font-size: 12px; }
+/* Creates the project card grid. */
+.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 42px 24px; }
+/* Allows the first project card to span the full grid width. */
+.project-featured { grid-column: span 2; display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+/* Creates a common visual area for each project. */
+.project-art { min-height: 250px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #141d22; border: 1px solid var(--line); }
+/* Styles the small project number. */
+.art-index, .art-caption { position: absolute; z-index: 2; color: #aeb9c0; font-size: 8px; letter-spacing: .16em; }
+/* Positions the project number. */
+.art-index { top: 18px; left: 19px; }
+/* Positions the artwork category label. */
+.art-caption { right: 18px; bottom: 17px; color: var(--accent); }
+/* Creates the raspador-inspired artwork background. */
+.raspador-art { background: radial-gradient(ellipse at 55% 45%, #31434a, #142027 55%, #10161b); }
+/* Draws the raspador drum. */
+.machine-wheel { width: 175px; height: 175px; border: 12px solid #a7b3b1; border-radius: 50%; box-shadow: inset 0 0 0 8px #34464b, 0 0 0 2px #d0d9d3, 0 0 35px rgba(199,243,107,.12); }
+/* Draws the mechanical lines in the raspador visual. */
+.machine-line { position: absolute; width: 240px; height: 2px; background: var(--accent); opacity: .65; transform: rotate(28deg); }
+/* Positions the first mechanical line. */
+.line-a { top: 42%; }
+/* Positions the second mechanical line. */
+.line-b { top: 58%; transform: rotate(-28deg); }
+/* Creates the aquaponics project background. */
+.aqua-art { background: radial-gradient(ellipse at 50% 100%, #244a42, #13241f 70%); }
+/* Draws the sun in the aquaponics visual. */
+.aqua-sun { position: absolute; top: 50px; right: 70px; width: 65px; height: 65px; border-radius: 50%; background: #c7f36b; opacity: .8; box-shadow: 0 0 45px rgba(199,243,107,.25); }
+/* Draws the aquaponics water tank. */
+.aqua-tank { position: absolute; bottom: 55px; width: 210px; height: 80px; border: 2px solid #9bbdb0; border-radius: 5px 5px 22px 22px; background: linear-gradient(180deg, transparent 15%, rgba(78,171,150,.38) 16%); }
+/* Draws small fish-like shapes in the tank. */
+.aqua-tank span { position: relative; top: 38px; left: 35px; display: inline-block; width: 21px; height: 9px; margin-right: 20px; border-radius: 50%; background: #c7f36b; }
+/* Adds a leaf symbol to the aquaponics artwork. */
+.aqua-leaf { position: absolute; top: 35px; left: 75px; color: #c7f36b; font-size: 60px; }
+/* Creates the data project background. */
+.data-art { background: radial-gradient(ellipse at 50% 100%, #283e4c, #151d28 70%); }
+/* Arranges the data chart bars. */
+.chart-bars { height: 130px; display: flex; align-items: end; gap: 12px; }
+/* Styles each data chart bar. */
+.chart-bars i { display: block; width: 19px; background: linear-gradient(180deg, #c7f36b, #6d8e4b); opacity: .9; }
+/* Sets the first data bar height. */
+.chart-bars i:nth-child(1) { height: 35%; }
+/* Sets the second data bar height. */
+.chart-bars i:nth-child(2) { height: 55%; }
+/* Sets the third data bar height. */
+.chart-bars i:nth-child(3) { height: 45%; }
+/* Sets the fourth data bar height. */
+.chart-bars i:nth-child(4) { height: 78%; }
+/* Sets the fifth data bar height. */
+.chart-bars i:nth-child(5) { height: 65%; }
+/* Sets the sixth data bar height. */
+.chart-bars i:nth-child(6) { height: 90%; }
+/* Sets the seventh data bar height. */
+.chart-bars i:nth-child(7) { height: 100%; }
+/* Draws the chart baseline. */
+.chart-baseline { position: absolute; bottom: 58px; width: 230px; height: 1px; background: rgba(255,255,255,.35); }
+/* Styles the project information area. */
+.project-info { padding-top: 22px; }
+/* Styles the small project type label. */
+.project-type, .timeline-label { margin-bottom: 10px; color: var(--accent); font-size: 9px; font-weight: 700; letter-spacing: .15em; }
+/* Styles each project title. */
+.project-info h3 { margin-bottom: 11px; font-size: 20px; line-height: 1.35; letter-spacing: -.04em; }
+/* Styles the project descriptions. */
+.project-info p { max-width: 520px; margin-bottom: 18px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+/* Makes project tags smaller than general skill tags. */
+.tag-row span { padding: 6px 9px; font-size: 9px; }
+/* Creates a vertical timeline. */
+.timeline { border-top: 1px solid var(--line); }
+/* Creates each timeline row. */
+.timeline-item { display: grid; grid-template-columns: .7fr 1.3fr; gap: 60px; padding: 32px 0; border-bottom: 1px solid var(--line); }
+/* Styles the date column. */
+.timeline-date { color: #8c98a3; font-size: 10px; letter-spacing: .1em; }
+/* Removes extra space below timeline labels. */
+.timeline-label { margin-bottom: 8px; }
+/* Styles the experience and education titles. */
+.timeline-content h3 { margin-bottom: 9px; font-size: 18px; }
+/* Styles the timeline descriptions. */
+.timeline-content p:last-child { max-width: 650px; margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
+/* Creates the two-column contact section. */
+.contact-section { display: grid; grid-template-columns: 1fr .8fr; gap: 100px; padding: 125px 0; border-bottom: 1px solid var(--line); }
+/* Styles the contact heading. */
+.contact-intro h2 { margin-bottom: 25px; }
+/* Styles the contact introduction. */
+.contact-intro > p:not(.eyebrow) { max-width: 390px; color: var(--muted); font-size: 13px; line-height: 1.9; }
+/* Styles the contact email link. */
+.contact-email { display: inline-block; margin-top: 20px; padding-bottom: 7px; border-bottom: 1px solid var(--accent); font-size: 13px; }
+/* Highlights the contact email arrow. */
+.contact-email span { margin-left: 12px; color: var(--accent); }
+/* Arranges contact form fields vertically. */
+.contact-form { display: flex; flex-direction: column; }
+/* Styles contact form labels. */
+.contact-form label { margin: 0 0 8px; color: #aab4bd; font-size: 9px; font-weight: 700; letter-spacing: .14em; }
+/* Styles text fields and message areas. */
+.contact-form input, .contact-form textarea { width: 100%; margin-bottom: 23px; padding: 13px 0; border: 0; border-bottom: 1px solid var(--line); outline: none; background: transparent; color: var(--text); font: 12px var(--font-body); resize: vertical; }
+/* Changes the field border when a visitor selects it. */
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); }
+/* Styles the placeholder text. */
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #68737e; }
+/* Aligns the form submit button to the left. */
+.form-submit { align-self: flex-start; }
+/* Styles the form helper message. */
+.form-note { margin: 12px 0 0; color: #78848e; font-size: 10px; }
+/* Arranges the footer content. */
+.site-footer { min-height: 150px; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 20px; }
+/* Styles the footer statement. */
+.site-footer > p { margin: 0; color: #8e99a3; font-size: 10px; text-align: center; }
+/* Aligns footer navigation links. */
+.footer-links { display: flex; justify-content: flex-end; gap: 20px; color: #aab4bd; font-size: 8px; letter-spacing: .1em; }
+/* Highlights footer links on hover. */
+.footer-links a:hover { color: var(--accent); }
+/* Places the copyright notice across the footer. */
+.site-footer small { grid-column: 1 / -1; padding: 15px 0 25px; border-top: 1px solid var(--line); color: #64717c; font-size: 9px; }
+/* Adjusts the website for medium-sized screens. */
+@media (max-width: 850px) { .site-shell { width: min(100% - 42px, 680px); } .navigation { gap: 17px; } .hero { min-height: 620px; grid-template-columns: 1fr .7fr; } .hero-visual { width: 280px; } .about-grid, .contact-section { gap: 45px; } .project-featured { gap: 22px; } }
+/* Adjusts the website for mobile screens. */
+@media (max-width: 650px) { .site-shell { width: calc(100% - 38px); } .site-header { min-height: 76px; } .menu-toggle { width: 42px; height: 42px; display: flex; flex-direction: column; justify-content: center; gap: 6px; border: 1px solid var(--line); background: transparent; } .menu-toggle span { width: 17px; height: 1px; margin: 0 auto; background: var(--text); } .navigation { position: absolute; z-index: 5; top: 76px; right: 19px; left: 19px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 18px; border: 1px solid var(--line); background: #11161d; } .navigation.is-open { display: flex; } .navigation a { padding: 13px 0; border-bottom: 1px solid var(--line); } .navigation .nav-cta { margin-top: 10px; padding: 12px; border: 1px solid var(--line); } .hero { min-height: auto; grid-template-columns: 1fr; padding-top: 85px; padding-bottom: 100px; } h1 { font-size: clamp(47px, 12vw, 68px); } .hero-description { font-size: 13px; } .hero-visual { width: min(300px, 85%); margin: 65px auto 10px; justify-self: center; } .hero-meta { flex-wrap: wrap; margin-top: 42px; font-size: 8px; } .scroll-cue { bottom: 30px; } .section { padding: 85px 0; } .section-heading { margin-bottom: 38px; } .about-grid, .contact-section { grid-template-columns: 1fr; gap: 40px; } .about-facts { grid-template-columns: 1fr 1fr; } .skills-block { margin-top: 45px; } .heading-row { display: block; } .heading-note { margin-top: 20px; } .project-grid { grid-template-columns: 1fr; gap: 38px; } .project-featured { grid-column: auto; display: block; } .project-featured .project-art { min-height: 230px; } .project-featured .project-info { padding-top: 22px; } .project-art { min-height: 220px; } .timeline-item { grid-template-columns: 1fr; gap: 12px; padding: 25px 0; } .contact-section { padding: 85px 0; } .site-footer { grid-template-columns: 1fr 1fr; padding-top: 30px; } .site-footer > p { grid-column: 1 / -1; grid-row: 2; text-align: left; } .footer-links { flex-direction: column; align-items: flex-end; gap: 10px; } }
+/* Respects visitors who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
